@@ -1,0 +1,10 @@
+$pdo = new PDO(...);
+$insert = "INSERT INTO `user` (`idUser`, `name`, `login`, `pass`, `email`, `urlphoto`) VALUES(:idUser, :name, :login, :pass, :email, :urlphoto)";
+$pdoStmt = $pdo->prepare($insert);
+$pdoStmt->bindValue(":idUser", NULL);
+$pdoStmt->bindValue(":name", $user->getName());
+$pdoStmt->bindValue(":login", $user->getLogin());
+$pdoStmt->bindValue(":pass", $user->getPass());
+$pdoStmt->bindValue(":email", $user->getEmail());
+$pdoStmt->bindValue(":urlphoto", $user->getUrl());
+$pdoStmt->execute();
