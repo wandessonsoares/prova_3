@@ -47,7 +47,7 @@
 
     <div id="content">
       <h2>Fazer Login</h2>
-      <form class="form-horizontal" action="handle_login.php" method="POST">
+      <form class="form-horizontal" action="config_login.php" method="POST">
         <div class="control-group">
           <label class="control-label" for="inputLogin">Login</label>
           <div class="controls">
